@@ -1,6 +1,7 @@
 function Formulario({botao, eventoTeclado, cadastrar, obj, cancelar, remover, alterar}) {
     return (
         <form>
+            <h1> LISTA DE TAREFAS </h1>
             <input type='text' value={obj.titulo} onChange={eventoTeclado} name='titulo' placeholder='Titulo' className='form-control' />
             <input type='text' value={obj.descricao} onChange={eventoTeclado} name='descricao' placeholder='Descrição' className='form-control' />
             <input type='text' value={obj.status} onChange={eventoTeclado} name='status' placeholder='Status' className='form-control' />
